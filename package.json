@@ -1,0 +1,37 @@
+{
+  "name": "MetaXSeed",
+  "version": "1.0.0",
+  "description": "4% taxes for Dev\r 6% faxes for Marketing",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "deploy:bsc-testnet": "npx hardhat run --network bsctestnet scripts/deploy.js",
+    "deploy:bsc-mainnet": "npx hardhat run --network bscmainnet scripts/deploy.js",
+    "verify:bsc-testnet": "npx hardhat verify --network bsctestnet",
+    "verify:bsc-mainnet": "npx hardhat verify --network bscmainnet",
+    "deploy:eth-mainnet": "npx hardhat run --network ethmainnet scripts/deploy.js",
+    "verify:eth-mainnet": "npx hardhat verify --network ethmainnet",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c-spider/XSEED-Token-Contract.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/c-spider/XSEED-Token-Contract/issues"
+  },
+  "homepage": "https://github.com/c-spider/XSEED-Token-Contract#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.4.1",
+    "@nomiclabs/hardhat-ethers": "^2.0.4",
+    "@nomiclabs/hardhat-etherscan": "^3.0.0",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.3",
+    "hardhat": "^2.8.1"
+  }
+}
